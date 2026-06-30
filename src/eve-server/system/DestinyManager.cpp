@@ -2342,6 +2342,9 @@ void DestinyManager::SetUndockSpeed() {
     m_changeDelay = true;   // skip a single tic before making change
     m_shipAccelTime = 0.5f;
     m_prevSpeedFraction = 0.0f;
+    m_prevSpeed = 0.0f;
+    m_accel = true;
+    m_decel = false;
     m_userSpeedFraction = 1.1f;
     m_maxSpeed = m_maxShipSpeed;
     m_velocity = m_shipHeading * m_maxSpeed;
